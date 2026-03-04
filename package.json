@@ -1,0 +1,8 @@
+{
+  "name": "dropconnect-app",
+  "version": "1.0.0",
+  "description": "DropConnect Marktplatz",
+  "scripts": {
+    "start": "echo 'App is running'"
+  }
+}
