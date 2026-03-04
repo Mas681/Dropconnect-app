@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropConnect</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>DropConnect - LIVE! 🚀</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f4f6; }
+        header { background: white; padding: 20px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2563eb; font-size: 32px; }
+        main { max-width: 1000px; margin: 40px auto; padding: 20px; }
+        .box { background: white; padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .box h2 { font-size: 28px; margin-bottom: 20px; color: #1f2937; }
+        .box p { font-size: 16px; color: #6b7280; line-height: 1.6; margin: 10px 0; }
+        .success { color: #10b981; font-weight: bold; font-size: 18px; }
+        footer { background: #1f2937; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module">
-        const SUPABASE_URL = 'https://pctjbjkkjwgfbttlaqpz.supabase.co';
-        const SUPABASE_ANON_KEY = 'sb_publishable_GwIahEwoG-08NRw9vh89hQ_itBNlLZK';
-        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-        // Simple App
-        document.getElementById('root').innerHTML = `
-            <div class="min-h-screen bg-gray-50">
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto px-4 py-4">
-                        <h1 class="text-3xl font-bold text-blue-600">🚀 DropConnect</h1>
-                        <p class="text-gray-600 mt-2">Marktplatz für Dropshipper & Lieferanten</p>
-                    </div>
-                </header>
-                
-                <main class="max-w-7xl mx-auto px-4 py-12">
-                    <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                        <h2 class="text-2xl font-bold mb-4">✅ App ist LIVE!</h2>
-                        <p class="text-gray-600 text-lg">
-                            Deine DropConnect App funktioniert! 🎉
-                        </p>
-                        <p class="text-gray-500 mt-4">
-                            Datenbank: Supabase ✓<br>
-                            Code: GitHub ✓<br>
-                            Online: Vercel ✓
-                        </p>
-                        <div class="mt-8">
-                            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                                Zur App →
-                            </a>
-                        </div>
-                    </div>
-                </main>
-                
-                <footer class="bg-gray-800 text-white text-center py-8 mt-16">
-                    <p>© 2024 DropConnect - Deine Marktplatz-App</p>
-                </footer>
-            </div>
-        `;
-    </script>
+    <header>
+        <h1>🚀 DropConnect</h1>
+        <p style="color: #6b7280; margin-top: 5px;">Marktplatz für Dropshipper & Lieferanten</p>
+    </header>
+    
+    <main>
+        <div class="box">
+            <h2>✅ GLÜCKWUNSCH!</h2>
+            <p class="success">Deine App ist LIVE und funktioniert!</p>
+            
+            <p style="margin-top: 30px; font-size: 18px;">
+                <strong>Du hast soeben:</strong>
+            </p>
+            <ul style="list-style: none; margin: 20px 0; font-size: 16px;">
+                <li>✓ Datenbank (Supabase) erstellt</li>
+                <li>✓ Code auf GitHub hochgeladen</li>
+                <li>✓ App auf Vercel deployt</li>
+            </ul>
+            
+            <p style="margin-top: 30px; background: #eff6ff; padding: 20px; border-radius: 8px;">
+                <strong>Nächste Schritte:</strong><br><br>
+                1. Erste User einladen<br>
+                2. Feedback sammeln<br>
+                3. Features verbessern<br>
+                4. Geld verdienen 💰
+            </p>
+            
+            <p style="margin-top: 30px; color: #10b981; font-size: 20px;">
+                <strong>🎉 Du bist jetzt ein App-Entwickler!</strong>
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 DropConnect - Made with ❤️</p>
+    </footer>
 </body>
 </html>
